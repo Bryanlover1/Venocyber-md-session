@@ -59,8 +59,8 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Bryan_Tech.sendMessage(Qr_Code_By_Venocyber_Tech.user.id, { text: '' + b64data });
 	
 				   let LUFFY_MD_TEXT = `
-*_Qr Code By Venocyber Tech_*
-*_Made With 🤍_*
+*_Qr Code By Bryan Tech_*
+*_Made With 🍀_*
 ______________________________________
 *_Pair Code Connected by Bryan Tech_*
 *_Made With 🍀_*
