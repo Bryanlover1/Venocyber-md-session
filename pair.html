@@ -142,12 +142,12 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">VENOCYBER MD PAIRING CODE</h3>
+            <h3 class="centered-text">LUFFY MD PAIRING CODE</h3>
             <br>
-            <h6>Made By Venocyber tech🔥🥳.</h6>
+            <h6>Made By Bryan tech💖.</h6>
             <h6>Enter Your Number with Country Code.</h6>
             <div class="input-container">
-              <input placeholder="255698101xxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
+              <input placeholder="233263176xxx" type="number" id="number" placeholder="Enter your Phone Pumber with Cuntry Code" name="">
               <button id="submit">Submit</button>
             </div>
             
@@ -188,7 +188,7 @@
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid Number</a><br><br>';
       } else {
-        const Venocyber_Tech = c.value.replace(/[^0-9]/g, "");
+        const Bryan_Tech = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
         const cc = Venocyber_Tech.split('');
@@ -204,11 +204,11 @@
         });
         c.type = "text";
         c.value = "+" + bb;
-        c.style = "color:black;font-size:20px";
+        c.style = "color:Red+White;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please Wait...</a><br><br>';
-        let { data } = await axios(`/code?number=${Venocyber_Tech}`);
+        let { data } = await axios(`/code?number=${Bryan_Tech}`);
         let code = data.code || "Service Unavailable";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:Red;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
     });
   </script>
