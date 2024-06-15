@@ -65,15 +65,14 @@ ______________________________________
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║🎖️ *Repo:* _https://github.com/Bryanlover1/luffy-md_
+║🎖️ *Repo:* _https://github.com/Bryanlover1/Naruto-MD-V1_
 ║🎖️ *WaGroup:* _https://chat.whatsapp.com/HsPiKU0POmU6Pbg4SLwi90_
 ║🎖️ *WaChannel:* _https://whatsapp.com/channel/0029VacpEdXIt5rqKLB9nC1L_
-║🎖️ *Plugins:* _https://github.com/Bryanlover1/luffy-md-plugins_
 ╚══════════════════════╝ 
 _____________________________________
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Bryan_Tech.sendMessage(Pair_Code_By_Bryan_Tech.user.id,{text:LUFFY_MD_TEXT},{quoted:session})
+ await Pair_Code_By_Bryan_Tech.sendMessage(Pair_Code_By_Bryan_Tech.user.id,{text: NARUTO_MD_TEXT},{quoted:session})
  
 
         await delay(100);
