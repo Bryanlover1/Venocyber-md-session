@@ -56,9 +56,9 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Bryan_Tech.sendMessage(Qr_Code_By_Venocyber_Tech.user.id, { text: '' + b64data });
+				   let session = await Qr_Code_By_Bryan_Tech.sendMessage(Qr_Code_By_Bryan_Tech.user.id, { text: '' + b64data });
 	
-				   let LUFFY_MD_TEXT = `
+				   let Naruto_MD_TEXT = `
 *_Qr Code By Bryan Tech_*
 *_Made With 🍀_*
 ______________________________________
@@ -71,15 +71,14 @@ ______________________________________
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••『
-║🎖️ *Repo:* _https://github.com/Bryanlover1/Luffy-md_
+║🎖️ *Repo:* _https://github.com/Bryanlover1/Naruto-MD-V1_
 ║🎖️ *WaGrroup:* _https://chat.whatsapp.com/HsPiKU0POmU6Pbg4SLwi90_
 ║🎖️ *WaChannel:* _https://whatsapp.com/channel/0029VacpEdXIt5rqKLB9nC1L_
-║🎖️ *Plugins:* _https://github.com/Bryanlover1/Luffy-md-plugins_
 ╚══════════════════════╝ 
 _____________________________________
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Bryan_Tech.sendMessage(Qr_Code_By_Bryan_Tech.user.id,{text:Venocyber_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_Bryan_Tech.sendMessage(Qr_Code_By_Bryan_Tech.user.id,{text: Naruto_MD_TEXT},{quoted:session})
 
 
 
