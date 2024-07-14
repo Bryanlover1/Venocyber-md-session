@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Luffy_Tech = Bryan_Tech({
+            let Pair_Code_By_Bryan_Tech = Bryan_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -55,17 +55,17 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Bryan_Tech.sendMessage(Pair_Code_By_Bryan_Tech.user.id, { text: '' + b64data });
 
-               let LUFFY_MD_TEXT = `
+               let BRYAN_MD_TEXT = `
 *_Pair Code Connected by Bryan Tech_*
 *_Made With 🍀_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN LUFFY-MD 』*
+║ *『 WOW YOU CHOOSEN BRYAN-MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║🎖️ *Repo:* _https://github.com/Bryanlover1/Luffy-Md_
+║🎖️ *Repo:* _https://github.com/Bryanlover1/Bryan-Md_
 ║🎖️ *WaGroup:* _https://chat.whatsapp.com/HsPiKU0POmU6Pbg4SLwi90_
 ║🎖️ *WaChannel:* _https://whatsapp.com/channel/0029VacpEdXIt5rqKLB9nC1L_
 ╚══════════════════════╝ 
@@ -80,7 +80,7 @@ _Don't Forget To Give Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    LUFFY_MD_PAIR_CODE();
+                    Bryan_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
