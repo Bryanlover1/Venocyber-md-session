@@ -28,7 +28,7 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function LUFFY_MD_QR_CODE() {
+	async function BRYAN_MD_QR_CODE() {
 		const {
 			state,
 			saveCreds
@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await Qr_Code_By_Bryan_Tech.sendMessage(Qr_Code_By_Bryan_Tech.user.id, { text: '' + b64data });
 	
-				   let Naruto_MD_TEXT = `
+				   let BRYAN_MD_TEXT = `
 *_Qr Code By Bryan Tech_*
 *_Made With 🍀_*
 ______________________________________
@@ -66,12 +66,12 @@ ______________________________________
 *_Made With 🍀_*
 ______________________________________
 ╔════◇
-║ *『 WOW YOU CHOOSEN LUFFY-MD 』*
+║ *『 WOW YOU CHOOSEN BRYAN-MD 』*
 ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
 ╚══════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••『
-║🎖️ *Repo:* _https://github.com/Bryanlover1/Naruto-MD-V1_
+║🎖️ *Repo:* _https://github.com/Bryanlover1/Bryan-Md_
 ║🎖️ *WaGrroup:* _https://chat.whatsapp.com/HsPiKU0POmU6Pbg4SLwi90_
 ║🎖️ *WaChannel:* _https://whatsapp.com/channel/0029VacpEdXIt5rqKLB9nC1L_
 ╚══════════════════════╝ 
@@ -87,7 +87,7 @@ _Don't Forget To Give Star To My Repo_`
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					LUFFY_MD_QR_CODE();
+					BRYAN_MD_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -100,6 +100,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await LUFFY_MD_QR_CODE()
+	return await BRYAN_MD_QR_CODE()
 });
 module.exports = router
